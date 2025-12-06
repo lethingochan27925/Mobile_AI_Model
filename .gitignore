@@ -38,6 +38,7 @@ __pycache__/
 !src/*.xlsx
 !src/*.log
 !src/*.csv
+!src/data.py
 
 # --- System files ---
 .DS_Store
