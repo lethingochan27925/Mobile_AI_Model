@@ -25,3 +25,11 @@ scaler.pkl
 server.py
 
 user_item_matrix.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Specific folders
+src/__pycache__/
