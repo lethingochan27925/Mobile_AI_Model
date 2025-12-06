@@ -1,35 +1,27 @@
-.env
+# --- ENV ---
+.env/
+venv/
 
-app.py
-
-data.py
-
-data1.py
-
-autoencoder_model.h5
-
-encoder_model.h5
-
-fakedata.py
-
-model.py
-
-orders_27500.xlsx
-
-product_columns.pkl
-
-recommendation_system.log
-
-scaler.pkl
-
-server.py
-
-user_item_matrix.xlsx
-
-# Python cache
+# --- Python cache ---
 __pycache__/
+*/__pycache__/
 *.pyc
 *.pyo
 
-# Specific folders
-src/__pycache__/
+# --- Ignore only at ROOT (not inside src/) ---
+/*.h5
+/*.pkl
+/*.log
+/*.xlsx
+/*.csv
+
+# --- Allow these file types inside src ---
+!src/*.h5
+!src/*.pkl
+!src/*.xlsx
+!src/*.log
+!src/*.csv
+
+# --- System files ---
+.DS_Store
+Thumbs.db
